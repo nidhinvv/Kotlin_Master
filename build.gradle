@@ -2,6 +2,10 @@
 
 buildscript {
     ext.kotlin_version = '1.2.30'
+    ext.data_binding_version = '2.3.1'
+    ext.support_version = '26.1.0'
+    ext.coroutines_version = '0.22.5'
+    ext.lifecycle = '1.1.1'
     repositories {
         google()
         jcenter()
