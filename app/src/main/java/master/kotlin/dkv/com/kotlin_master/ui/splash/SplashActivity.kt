@@ -4,9 +4,11 @@ import android.os.Bundle
 import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.android.UI
 import master.kotlin.dkv.com.kotlin_master.R
+import master.kotlin.dkv.com.kotlin_master.extensions.startActivity
 import master.kotlin.dkv.com.kotlin_master.log.Logger
 import master.kotlin.dkv.com.kotlin_master.log.info
 import master.kotlin.dkv.com.kotlin_master.ui.base.BaseActivity
+import master.kotlin.dkv.com.kotlin_master.ui.main.MainActivity
 
 
 class SplashActivity : BaseActivity(), Logger {
@@ -26,6 +28,7 @@ class SplashActivity : BaseActivity(), Logger {
     public override fun onDestroy() {
         delayJob?.cancel()
 
+
         super.onDestroy()
     }
 
@@ -35,7 +38,7 @@ class SplashActivity : BaseActivity(), Logger {
         info("End waiting...")
 
         info("Starting Login Activity...")
-      //  startActivity<MainActivity>()
+        startActivity<MainActivity>()
         finish()
     }
 }
