@@ -1,8 +1,6 @@
 package master.kotlin.dkv.com.kotlin_master.extensions
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
 import master.kotlin.dkv.com.kotlin_master.app.App
 
 
@@ -15,11 +13,11 @@ import master.kotlin.dkv.com.kotlin_master.app.App
  *      startActivity<ActivityClass>()
  *
  */
-inline fun <reified T: Activity> Context.startActivity(){
+/*inline fun <reified T: Activity> Context.startActivity(){
     val intent = Intent(this, T::class.java)
 
     startActivity(intent)
-}
+}*/
 
 /**
  * Extension property to get application from Activity

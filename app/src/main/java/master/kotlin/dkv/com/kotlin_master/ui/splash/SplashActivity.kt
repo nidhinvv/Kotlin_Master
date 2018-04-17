@@ -5,13 +5,13 @@ import kotlinx.coroutines.experimental.*
 import kotlinx.coroutines.experimental.android.UI
 import master.kotlin.dkv.com.kotlin_master.R
 import master.kotlin.dkv.com.kotlin_master.app.Constant
-import master.kotlin.dkv.com.kotlin_master.extensions.startActivity
 import master.kotlin.dkv.com.kotlin_master.log.Logger
 import master.kotlin.dkv.com.kotlin_master.log.info
 import master.kotlin.dkv.com.kotlin_master.ui.base.BaseActivity
 import master.kotlin.dkv.com.kotlin_master.ui.login.LoginActivity
 import master.kotlin.dkv.com.kotlin_master.ui.main.MainActivity
 import master.kotlin.dkv.com.kotlin_master.util.Pref
+import org.jetbrains.anko.startActivity
 
 
 class SplashActivity : BaseActivity(), Logger {
