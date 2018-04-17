@@ -62,4 +62,11 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:2.15"
     kapt 'com.google.dagger:dagger-android-processor:2.15'
     kapt 'com.google.dagger:dagger-compiler:2.15'
+
+    // RxJava and RxKotlin library
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
+    implementation "com.jakewharton.rxbinding:rxbinding:$rxbinding_version"
+    implementation "com.jakewharton.rxbinding:rxbinding-kotlin:$rxbinding_version"
 }
